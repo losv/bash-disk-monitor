@@ -1,0 +1,5 @@
+config/config.conf
+*.log
+logs/
+*.swp
+.DS_Store
