@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
-# ============================================
 # Disk Monitor Script
 # Checks disk usage and sends Telegram alerts
-# ============================================
+
 
 set -euo pipefail
 
@@ -28,7 +27,7 @@ COOLDOWN=${COOLDOWN:-3600}
 
 # ============================================
 # Utility functions
-# ============================================
+
 
 log_message() {
     local message="$1"
@@ -110,7 +109,7 @@ send_alert() {
 
 # ============================================
 # Pre-checks
-# ============================================
+
 
 mkdir -p "$STATE_DIR"
 
@@ -128,7 +127,6 @@ touch "$LOG_FILE" 2>/dev/null || {
 
 # ============================================
 # Main logic
-# ============================================
 
 log_message "=== Disk check started ==="
 
