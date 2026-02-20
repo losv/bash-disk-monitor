@@ -15,3 +15,20 @@ Simple disk usage monitoring script with logging and Telegram alerts.
 ---
 
 ## Project Structure
+
+bash-disk-monitor/
+├── LICENSE
+├── README.md
+├── config/
+│ └── config.example.conf
+├── scripts/
+│ └── disk_check.sh
+
+## Requirements
+
+- Linux
+- bash 4+
+- curl
+- awk
+
+---
